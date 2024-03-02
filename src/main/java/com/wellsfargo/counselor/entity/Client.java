@@ -87,4 +87,17 @@ public class Client {
 	}
 	
 	public void setAddress(String address) {
-		this.add
+		this.address = address;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	
+}
+
