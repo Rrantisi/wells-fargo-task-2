@@ -15,7 +15,7 @@ public class Client {
 	private long clientId;
 	
 	@ManyToOne
-	@JoinColumn(name = "advisorId")
+	@JoinColumn(name = "advisorId", nullable = false)
 	private Advisor advisor;
 	
 	@Column(nullable = false)
@@ -87,17 +87,4 @@ public class Client {
 	}
 	
 	public void setAddress(String address) {
-		this.address = address;
-	}
-	
-	public String getPhone() {
-		return phone;
-	}
-	
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-	
-	
-}
-
+		this.add
